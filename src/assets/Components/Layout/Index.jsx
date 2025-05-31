@@ -5,7 +5,7 @@ import Navbar from './navbar'
 const Layout = () => {
   return (
     <>
-      {/* <Navbar/> */}
+      <h3>this is index</h3>
      <Outlet/> 
     </>
   )
