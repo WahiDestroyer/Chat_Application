@@ -1,8 +1,9 @@
 import React from 'react'
+import Chat from './Chat'
 
 const Home = () => {
   return (
-    <h2>this is home page</h2>
+    <Chat/>
   )
 }
 

@@ -13,13 +13,13 @@ const Navbar = () => {
       <div className="pt-24 gap-4 grid">
         <Link
           to="/"
-          className="text-white flex items-center gap-1.5 font-inter font-semibold text-lg pl-5 py-3 bg-black rounded-2xl max-w-30"
+          className="text-neon-g flex items-center gap-1.5 font-inter font-semibold text-lg pl-5 py-3 bg-black rounded-2xl max-w-30"
         >
           <IoChatbox /> Chat
         </Link>
         <Link
           to="/"
-          className="text-white flex items-center gap-1.5 font-inter font-semibold text-lg pl-5 py-3 bg-black rounded-2xl max-w-30"
+          className="text-white flex items-center gap-1.5 font-inter font-semibold text-lg pl-5 py-3 rounded-2xl max-w-30"
         >
           <IoServer /> Server
         </Link>
