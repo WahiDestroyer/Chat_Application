@@ -1,9 +1,9 @@
 import {BrowserRouter, Routes, Route  } from "react-router";
 import ErrorPage from "./assets/pages/ErrorPage"
 import SignUp from "./assets/pages/SignUp"
-import Layout from "./assets/Components/Layout"
 import Home from "./assets/pages/Home"
 import LogIn from "./assets/pages/LogIn"
+import Layout from "./assets/Components/Layout/Index"
 
 function App() {
   return (
@@ -11,9 +11,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<LogIn />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route index element={<Layout />}>
-          <Route path="/home" element={<Home/>} />
-        </Route>
+        <Route index element={<Layout />}/>
         <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </BrowserRouter>
