@@ -1,10 +1,13 @@
-import React from 'react'
-import Chat from './Chat'
+import React from "react";
+import Guild from "./Guild"
 
 const Home = () => {
   return (
-    <Chat/>
-  )
-}
+    <>
+      <Guild />
+      
+    </>
+  );
+};
 
-export default Home
+export default Home;

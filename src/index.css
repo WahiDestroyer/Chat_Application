@@ -1,12 +1,23 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body{
+  height: 100vh;
+  overflow: hidden;
+  
+}
 
 @theme{
-  --font-inter: "Inter", sans-serif;
+  --font-mono: "Space Mono", monospace;
   --color-neon-g: #7CFC00;
-  --color-dark-g: #33453c;
-  --color-discord: #2c2f33;
-  --shadow-r: 8px 0px 19px -1px rgba(0,0,0,0.74);
+  --color-dis-g:#43B581;
+  --color-dis-1st: #202225;
+  --color-dis-2nd: #2E3036;
+  --color-dis-3rd: #37393F;
+  --color-light-gray: #4F545C;
+  --color-dark-gray: #8E9297;
+  --color-BB: #B9BBBE;
+  --color-DD: #DCDDDE;
 }
 
 

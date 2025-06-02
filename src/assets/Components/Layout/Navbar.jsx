@@ -1,39 +1,42 @@
 import React from "react";
-import { CiSettings } from "react-icons/ci"
-import { IoChatbox, IoServer } from "react-icons/io5";
-import { MdGroup } from "react-icons/md";
+import { AiOutlineSearch } from "react-icons/ai"
+import { BsDiscord } from "react-icons/bs"
+import { GoDotFill, GoPlus } from "react-icons/go"
 import { Link } from "react-router"
 
 const Navbar = () => {
   return (
-    <nav className="bg-dark-g h-screen pt-12 pr-9 pl-6 w-fit flex flex-col shadow-r">
-      <h1 className="font-inter font-bold text-3xl text-gray-200">
-        <span className="text-neon-g ">Chat</span>APP
-      </h1>
-      <div className="pt-24 gap-4 grid">
-        <Link
-          to="/"
-          className="text-neon-g flex items-center gap-1.5 font-inter font-semibold text-lg pl-5 py-3 bg-black rounded-2xl max-w-30"
-        >
-          <IoChatbox /> Chat
-        </Link>
-        <Link
-          to="/"
-          className="text-white flex items-center gap-1.5 font-inter font-semibold text-lg pl-5 py-3 rounded-2xl max-w-30"
-        >
-          <IoServer /> Server
-        </Link>
+    <nav className="bg-dis-1st p-3 flex flex-col items-center w-fit">
+      <div className="dots flex justify-around pb-2.5">
+        <p className="text-[#FC615D] text-2xl font-extrabold">
+          <GoDotFill />
+        </p>
+        <p className="text-[#FDBC40] text-2xl">
+          <GoDotFill />
+        </p>
+        <p className="text-[#34C749] text-2xl">
+          <GoDotFill />
+        </p>
       </div>
-      <div className="mt-auto flex gap-3 mb-5">
-        <div className="h-10 w-10 rounded-full overflow-hidden object-cover">
-          <img src="profile.jpg" alt="profile" />
-        </div>
-        <div>
-          <h2 className="text-white font-semibold">Wahid Tahosin Laam</h2>
-          <small className="flex text-gray-400 items-center gap-2">
-            Edit Profile <CiSettings />
-          </small>
-        </div>
+      <Link
+        to="/chat"
+        className="rounded-full bg-[#36393F] w-12 h-12 text-DD text-3xl flex items-center justify-center relative after:content-[''] after:absolute after:-bottom-3 after:left-2 after:w-8 after:h-0.5 after:bg-[#060607] mb-4.5"
+      >
+        <BsDiscord />
+      </Link>
+      <div className="grid gap-2">
+        <Link
+          to="/chat"
+          className="rounded-full bg-[#36393F] w-12 h-12 text-dis-g text-3xl flex items-center justify-center"
+        >
+          <GoPlus />
+        </Link>
+        <Link
+          to="/chat"
+          className="rounded-full bg-[#36393F] w-12 h-12 text-dis-g text-3xl flex items-center justify-center"
+        >
+          <AiOutlineSearch />
+        </Link>
       </div>
     </nav>
   );

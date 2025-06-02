@@ -2,8 +2,8 @@ import React from 'react'
 
 const Chat = () => {
   return (
-    <div>
-      this is Chat
+    <div className='bg-dis-3rd'>
+      
     </div>
   )
 }
