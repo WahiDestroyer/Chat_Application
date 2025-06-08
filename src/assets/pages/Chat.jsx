@@ -14,7 +14,7 @@ const Chat = () => {
           <span className="text-[#72767D] text-lg">
             <HiHashtag />
           </span>
-          general part
+          general
         </h2>
         <div className="flex justify-around gap-3.5 text-BB">
           <button>
@@ -44,20 +44,20 @@ const Chat = () => {
           </button>
         </div>
       </div>
-      <div className="mt-auto">
+      <div className="mt-auto mx-2">
         <img src="Empty.png" alt="empty" className="bg-no-repeat bg-cover" />
-        <div className="flex h-fit">
-          <div className="flex gap-0.5">
+        <div className="flex w-full mb-1">
+          <div className="flex gap-0.5 flex-1">
             <button className="flex items-center text-BB rounded-l-lg bg-[#40444B] px-1">
               <IoAddCircleSharp />
             </button>
             <input
               type="text"
               placeholder="Message #general"
-              className="px-3 py-1 bg-[#40444B] placeholder:text-DD placeholder:font-mono placeholder:text-base outline-0"
+              className="px-3 py-1 bg-[#40444B] placeholder:text-DD placeholder:font-mono placeholder:text-base outline-0 w-full rounded-r-lg relative"
             />
           </div>
-          <div className="flex">
+          <div className="flex absolute right-3 bottom-3 gap-3">
             <button className="flex items-center text-BB">
               <IoGift />
             </button>
