@@ -6,8 +6,8 @@ import { Link } from "react-router"
 
 const Navbar = () => {
   return (
-    <nav className="bg-dis-1st p-3 flex flex-col items-center w-fit">
-      <div className="dots flex justify-around pb-2.5">
+    <nav className="bg-dis-1st p-1 flex flex-col items-center w-fit">
+      <div className="dots flex justify-around pb-2">
         <p className="text-[#FC615D] text-2xl font-extrabold">
           <GoDotFill />
         </p>

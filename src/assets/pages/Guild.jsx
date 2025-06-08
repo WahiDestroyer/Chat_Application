@@ -8,7 +8,7 @@ import { Link } from "react-router";
 
 const Guild = () => {
   return (
-    <div className="bg-dis-2nd w-68 px-2.5 flex flex-col">
+    <div className="bg-dis-2nd min-w-70 px-2.5 flex flex-col">
       <div className="flex w-full justify-between border-b-2 border-black p-4">
         <Link to="/" className="text-white font-mono text-base font-bold">
           Guild
@@ -72,7 +72,7 @@ const Guild = () => {
           </div>
         </div>
       </div>
-      <div className="flex mt-auto profile_part justify-between">
+      <div className="profile_part flex mt-auto justify-between mb-2">
         <div className="flex gap-1">
           <img
             src="profile.jpg"
@@ -97,3 +97,11 @@ const Guild = () => {
 }
 
 export default Guild
+
+
+
+
+
+
+
+
