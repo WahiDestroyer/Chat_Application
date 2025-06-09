@@ -1,86 +1,72 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React from "react";
+import { Link } from "react-router";
 
 const LogIn = () => {
   return (
-    <div className="flex items-center justify-center h-screen bg-[#202123]">
-      <div
-        style={{ animation: "slideInFromLeft 1s ease-out" }}
-        className="max-w-md w-full bg-gradient-to-r from-black to-white rounded-xl shadow-2xl overflow-hidden p-8 space-y-8 "
-      >
-        <h2
-          style={{ animation: "appear 2s ease-out" }}
-          className="text-center text-4xl font-extrabold text-neon-g"
-        >
-          Welcome
-        </h2>
-        <p
-          style={{ animation: "appear 3s ease-out" }}
-          className="text-center text-neon-g"
-        >
-          Sign in to your account
-        </p>
-        <form method="POST" action="#" className="space-y-6">
-          <div className="relative">
-            <input
-              placeholder="john@example.com"
-              className="peer h-10 w-full border-b-2 border-gray-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-neon-g"
-              required
-              id="email"
-              name="email"
-              type="email"
-            />
-            <label
-              className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-neon-g peer-focus:text-sm"
-              htmlFor="email"
-            >
-              Email address
-            </label>
+    <div className="h-screen flex items-center justify-center relative">
+      <img
+        src="log.png"
+        alt="login"
+        className="absolute object-cover w-full h-full -z-10"
+      />
+      <div className="bg-[#36393F] rounded-lg p-8 z-10 flex gap-10">
+        <div>
+          <div className="flex flex-col items-center text-center pb-5">
+            <h2 className="text-white font-ubu text-2xl">Welcome back!</h2>
+            <p className="font-ubu text-base text-BB leading-5 pt-2">
+              We're so excited to see you again!
+            </p>
           </div>
-          <div className="relative">
+          {/* =================form part=================== */}
+          <form className="grid grid-cols-1">
+            <label className="font-ubu leading-4 text-xs text-BB pb-2">
+              Email or Phone Number <span className="text-red-600">*</span>
+            </label>
             <input
-              placeholder="Password"
-              className="peer h-10 w-full border-b-2 border-gray-600 text-white bg-transparent placeholder-transparent focus:outline-none focus:border-neon-g"
-              required
-              id="password"
-              name="password"
+              type="text"
+              inputMode="email"
+              pattern="[a-z0-9@.]*"
+              className="outline-0 bg-[#202225] rounded-xs h-8 text-BB font-ubu p-1 text-sm"
+            />
+            <label className="font-ubu leading-4 text-xs text-BB pb-2 pt-5">
+              Password<span className="text-red-600">*</span>
+            </label>
+            <input
               type="password"
+              className="outline-0 bg-[#202225] rounded-xs h-8 text-BB font-ubu text-sm"
             />
-            <label
-              className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-neon-g peer-focus:text-sm"
-              htmlFor="password"
-            >
-              Password
-            </label>
-          </div>
-          <div className="flex items-center justify-between">
-            <label className="flex items-center text-sm text-gray-200">
-              <input
-                className="form-checkbox h-4 w-4 text-purple-600 bg-gray-800 border-gray-300 rounded"
-                type="checkbox"
-              />
-              <span className="ml-2">Remember me</span>
-            </label>
-            <Link to="*" className="text-sm text-gray-600 hover:underline" >
-              Forgot your password?
+            <Link to="/errorpage" className="pb-5.5 ">
+              <span className="border-[#00AFF4] hover:border-b-1 text-[#00AFF4] font-ubu text-[10px] leading-4 cursor-pointer transition-all duration-300">
+                Forgot your password?
+              </span>
             </Link>
-          </div>
-          <button
-            className="w-full py-2 px-4 bg-gray-600 hover:bg-neon-g rounded-md shadow-lg text-black font-semibold transition duration-200"
-            type="submit"
-          >
-            Sign In
-          </button>
-        </form>
-        <div className="text-center text-gray-300">
-          Don't have an account?
-          <Link to="/signup" className="text-gray-600 hover:underline">
-            Sign up
-          </Link>
+            <button
+              type="submit"
+              className="bg-[#5865F2] font-ubu text-sm leading-6 text-white text-center py-1.5 rounded-xs"
+            >
+              Log In
+            </button>
+          </form>
+          <small className="font-ubu text-[10px] leading-4 text-[#A3A6AA] flex items-center gap-0.5 pt-3">
+            Need an account?
+            <Link
+              to="/signup"
+              className="border-[#00AFF4] hover:border-b-1 text-[#00AFF4] font-ubu text-[10px] leading-4 cursor-pointer transition-all duration-300"
+            >
+              Register
+            </Link>
+          </small>
+        </div>
+        <div className="flex items-center flex-col text-center">
+          <img src="QR.png" alt="QR Code" className="bg-cover bg-no-repeat border-white border-4 rounded-xs mt-3.5" />
+          <p className="font-ubu text-2xl leading-7 max-w-[180px] pt-7 pb-2 text-white">
+            Log in with QR Code
+          </p>
+          <p className="font-ubu text-base leading-5 text-BB max-w-64">Scan this with the Discord mobile app to log in instantly.</p>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default LogIn
+export default LogIn;

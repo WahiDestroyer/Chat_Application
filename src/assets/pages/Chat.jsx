@@ -54,7 +54,7 @@ const Chat = () => {
             <input
               type="text"
               placeholder="Message #general"
-              className="px-3 py-1 bg-[#40444B] placeholder:text-DD placeholder:font-mono placeholder:text-base outline-0 w-full rounded-r-lg relative"
+              className="px-3 py-1 bg-[#40444B] placeholder:text-DD placeholder:font-mono placeholder:text-base outline-0 w-full rounded-r-lg relative text-DD font-mono font-medium text-sm"
             />
           </div>
           <div className="flex absolute right-3 bottom-3 gap-3">
